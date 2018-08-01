@@ -1,0 +1,19 @@
+page-lista-procedimentos {
+	ion-navbar.toolbar {
+      height: 15pt;
+    }
+    .label{
+		text-align: left;
+		font-size: 15pt;
+		padding: 10pt;
+		color: #032842;
+		font-weight: bolder;
+	}
+    table.tabela { width: 100% }
+    table.tabela tr td { text-transform: uppercase; padding: 5pt; }
+    .icone { font-size: 2em; }
+    .linha {
+    	border-bottom: 1pt solid #ddd;
+    	border-radius: 5pt;
+    }
+}

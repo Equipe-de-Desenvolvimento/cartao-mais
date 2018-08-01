@@ -1,0 +1,27 @@
+page-agendamento-consultas {
+	.input{ 
+		padding: 8pt;
+		width: 100%;
+		height: 30pt;
+		display: block;
+		border: 1pt solid #333;
+		border-radius: 5pt;
+	}
+	.label{
+		// width: 100%;
+		text-align: center;
+		font-size: 15pt;
+		padding: 10pt;
+		color: #032842;
+		font-weight: bolder;
+	}
+	.listaConsultas { width: 100%; margin-top: 5%; }
+	.listaConsultas tr td { padding: 5pt; font-weight: bolder; font-size: 13pt; }
+	.listaConsultas tr td a { text-decoration: none; color: black; }
+	.botao { border: 1pt solid black; font-weight: bolder; color: black; text-align: left; }
+	.consultas { height: 35%; overflow-y: auto}
+	ion-navbar.toolbar {
+      height: 15pt;
+    }
+
+}

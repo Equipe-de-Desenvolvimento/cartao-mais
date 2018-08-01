@@ -1,0 +1,57 @@
+
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+  	<button ion-button icon-left clear color="letras" style="font-weight: bold" (click)="fecharPagina()">
+      <ion-icon name="arrow-back" style="font-size: 22pt; font-weight: bold"></ion-icon>
+	  <!-- Voltar -->
+	</button>
+    <!-- <ion-title>Faça Seu Cadastro</ion-title> -->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<form>
+		<ion-list>
+			<ion-item>
+				<ion-label floating color="letras" class="negrito">Nome</ion-label>
+			    <ion-input type="text" name="nome"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating color="letras" class="negrito">Rg</ion-label>
+			    <ion-input  type="text" name="rg"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating color="letras" class="negrito">Cpf</ion-label>
+			    <ion-input name="cpf"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating color="letras" class="negrito">Endereço</ion-label>
+			    <ion-input name="endereco"></ion-input>
+			</ion-item>
+
+			<!-- <ion-item>
+				<ion-label floating color="letras" class="negrito">D.N</ion-label>
+			    <ion-input name="dn"></ion-input>
+			</ion-item> -->
+
+			<ion-item>
+				<ion-label floating color="letras" class="negrito">Email</ion-label>
+			    <ion-input name="email"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating color="letras" class="negrito">Contato</ion-label>
+			    <ion-input name="contato"></ion-input>
+			</ion-item>
+		</ion-list>
+
+		<button ion-button type="submit" block color="light">ENVIAR</button>
+		<p class="pularEtapa" (click)="mostrarTelaAgradecimento()">Pular esta etapa!</p>
+    </form>
+</ion-content>

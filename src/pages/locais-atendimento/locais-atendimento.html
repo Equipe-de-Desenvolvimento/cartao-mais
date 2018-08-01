@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+
+  	<button ion-button icon-left clear color="letras" style="font-weight: bold" (click)="fecharPagina()">
+      <ion-icon name="arrow-back" style="font-size: 22pt; font-weight: bold"></ion-icon>
+	  <!-- Voltar -->
+	</button>
+    <!-- <ion-title>LOCAIS</ion-title> -->
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<button ion-button block color="letras" style="font-size: 14pt; font-weight: bold;">LOCAIS DE ATENDIMENTO</button>
+	<!-- <h3 class="label"></h3> -->
+	<table class="tabela" cellpadding="5" cellspacing="5">
+		<tr *ngFor="let item of locais" class="linha" >
+			<td (click)="listarProcedimentos(item)">{{item.info_parceiro.nome}}</td>
+			<td><ion-icon class="icone" color="letras" name="md-information-circle"></ion-icon></td>
+			<td><ion-icon class="icone" color="letras" name="md-pin"></ion-icon></td>
+		</tr>
+	</table>
+</ion-content>

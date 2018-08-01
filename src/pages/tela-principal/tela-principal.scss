@@ -1,0 +1,36 @@
+page-tela-principal {
+	background-color: #fff;
+	ion-content{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		height: 91%;
+	}
+	#cabecalhoDiv{margin: 5pt; margin-top: 8pt; margin-left: 8pt;}
+	#bemVindoDiv{
+		width: 50%; 
+		float: right; 
+		display: inline-block;
+		text-align: right;
+		font-weight: bolder;
+		font-size: 12pt;
+		color: black;
+	}
+	#corpo{
+		text-align: center;
+		margin: auto;
+		margin-top: 65%;
+	}
+	#corpo h2{color: #231815;font-weight: bolder;}
+	#corpo button{
+		font-weight: bolder;
+		font-size: 13pt;
+	}
+	p.logout{
+		color: red;
+		span {
+		 	padding: 2pt;
+			border: 1pt dashed #ddd;
+		}
+	}
+
+}

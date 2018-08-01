@@ -1,0 +1,55 @@
+
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+
+  	<button ion-button icon-left clear color="letras" style="font-weight: bold" (click)="fecharPagina()">
+      <ion-icon name="arrow-back" style="font-size: 22pt; font-weight: bold"></ion-icon>
+	  <!-- Voltar -->
+	</button>
+    <!-- <ion-title>EXAMES</ion-title> -->
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<button ion-button block color="letras" style="font-size: 14pt; font-weight: bold;">AGENDAMENTO DE EXAMES</button>
+	<div style="display: block; margin: 5pt 0 5pt 0">
+		<!-- <ion-icon name="ios-bookmarks-outline" style="font-size: 50pt"></ion-icon> -->
+		<IMG style="display: block; margin-left: auto; margin-right: auto; width: 30%" SRC="assets/imagens/iconeLupa.jpg">
+	</div>
+	<div style="margin: auto;">
+		<ion-grid>
+
+			<ion-row>
+				<ion-col style="text-align: center">
+					<label class="label">SOLICITE AQUI SEU EXAME</label>
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col col-8>
+					<input type="text" name="txtExame" class="input" [(ngModel)]="txtExame">
+				</ion-col>
+				<ion-col col-4>
+					<button ion-button block color="light" style="margin-top: -1pt;" (click)="abrirTelaSolicitacao()">SOLICITAR</button>
+				</ion-col>
+			</ion-row>
+
+		</ion-grid>
+	</div>
+	<h3 class="label">EXAMES AGENDADOS</h3>
+	<div style="margin: auto; width: 100%; height: 40%; border: 1pt solid black; border-radius: 10pt; margin-top: -15pt;">
+		<ion-grid>
+
+			<ion-row>
+				<ion-col>
+					<!-- <input type="text" name="txtExame" class="input" [(ngModel)]="txtExame"> -->
+				</ion-col>
+			</ion-row>
+
+		</ion-grid>
+	</div>
+</ion-content>

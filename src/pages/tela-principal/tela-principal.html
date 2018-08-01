@@ -1,0 +1,23 @@
+<ion-content padding>
+	<div id="cabecalhoDiv">
+
+		<div style="width: 50%; float: left; display: inline-block;">
+			<IMG SRC="assets/imagens/logo.jpg">
+		</div>
+		<div id="bemVindoDiv">
+			<table>
+				<p>SEJA BEM VINDO {{usuarioNome}}!</p>
+				<p class="logout"><span (click)="logout()">Sair <ion-icon name="md-exit"></ion-icon></span></p>
+			</table>
+		</div>
+	</div>
+
+	<div id="corpo">
+		<h2>SERVIÇOS</h2>	
+		<button ion-button block color="light" (click)="agendamentoExames()">AGENDAMENTO DE EXAMES</button>
+		<button ion-button block color="light" (click)="agendamentoConsultas()">AGENDAMENTO DE CONSULTAS</button>
+		<button ion-button block color="light" (click)="locaisAtendimento()">LOCAIS DE ATENDIMENTO</button>
+		<button ion-button block color="light" (click)="atendimentoVirtual()">ATENDIMENTO VIRTUAL</button>
+		<button ion-button block color="light">OUTROS SERVIÇOS</button>
+	</div>
+</ion-content>

@@ -1,0 +1,44 @@
+
+<ion-header>
+
+	<ion-navbar color="letras">
+		<ion-title>SOLICITAÇÃO</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<ion-grid>
+
+		<ion-row>
+			<ion-col>
+				<ion-item>
+					<ion-label>Data</ion-label>
+					<!-- <ion-input type="hidden" name="nome" value="teste" readonly></ion-input> -->
+					<ion-input type="date" name="data" [(ngModel)]="data" id="data" ></ion-input>
+					<!-- <input type="text" value="Pesquisar..." /> -->
+				</ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<ion-item>
+					<ion-label>Turno</ion-label>
+					<ion-select multiple="true" [(ngModel)]="turno">
+					    <ion-option value="m">Manhã</ion-option>
+					    <ion-option value="t">Tarde</ion-option>
+					    <ion-option value="n">Noite</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<button ion-button block id="submitButton" color="light" (click)="solicitarConsulta()">SOLICITAR</button>
+			</ion-col>
+		</ion-row>
+
+	</ion-grid>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<div style="width: 50%">
+					<IMG SRC="assets/imagens/logo.jpg">
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<div style="margin: auto; margin-top: 40%;">
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<div class="clienteButton" id="buttons" (click)="telaLogin()">
+						SOU<br>CLIENTE
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col>
+					<div class="naoClienteButton" id="buttons" (click)="naoSouCliente()">
+						NÃO SOU<br>CLIENTE
+					</div>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+</ion-content>

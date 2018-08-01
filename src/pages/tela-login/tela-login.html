@@ -1,0 +1,60 @@
+<ion-header>
+	<ion-navbar hideBackButton="true">
+		<button ion-button icon-left clear color="letras" style="font-weight: bold" (click)="fecharPagina()">
+	      <ion-icon name="arrow-back" style="font-size: 22pt; font-weight: bold"></ion-icon>
+		  <!-- Voltar -->
+		</button>
+  	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+
+			<ion-col>
+				<div style="width: 50%">
+					<IMG SRC="assets/imagens/logo.jpg">
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<div style="margin: auto; margin-top:10%;">
+		<ion-grid>
+
+			<ion-row>
+				<ion-col style="text-align: center">
+					<label class="label">LOGIN</label>
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col>
+					<input type="text" name="login" class="input" [(ngModel)]="login">
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col style="text-align: center">
+					<label class="label">SENHA</label>
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col>
+					<input type="password" name="senha" class="input" [(ngModel)]="senha">
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col>
+					<div style="width: 100%; margin-top: 10%;" (click)="fazerLogin()">
+						<button ion-button full color="light" id="submitButton">ENTRAR</button>
+					</div>
+				</ion-col>
+			</ion-row>
+
+		</ion-grid>
+	</div>
+
+	
+</ion-content>

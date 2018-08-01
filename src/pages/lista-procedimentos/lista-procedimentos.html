@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+
+  	<button ion-button icon-left clear color="letras" style="font-weight: bold" (click)="fecharPagina()">
+      <ion-icon name="arrow-back" style="font-size: 22pt; font-weight: bold"></ion-icon>
+	  <!-- Voltar -->
+	</button>
+    <!-- <ion-title>LOCAIS</ion-title> -->
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<button ion-button block color="letras" style="font-size: 14pt; font-weight: bold;">PROCEDIMENTOS DISPONIVEIS</button>
+	<ion-searchbar placeholder="Pesquisar procedimentos..." showCancelButton color="letras" (ionInput)="filtrarProcedimentos($event)"></ion-searchbar>
+
+	<!-- <h3 class="label"></h3> -->
+	<table class="tabela" cellpadding="5" cellspacing="5">
+		<tr *ngFor="let item of lista_proc.procedimentos" class="linha" >
+			<td>{{item.procedimento}}</td>
+			<td>{{item.grupo}}</td>
+		</tr>
+	</table>
+</ion-content>

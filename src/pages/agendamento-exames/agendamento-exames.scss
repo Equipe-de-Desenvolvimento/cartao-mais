@@ -1,0 +1,22 @@
+page-agendamento-exames {
+	.input{ 
+		padding: 8pt;
+		width: 100%;
+		height: 30pt;
+		display: block;
+		border: 1pt solid #333;
+		border-radius: 5pt;
+	}
+	.label{
+		// width: 100%;
+		text-align: center;
+		font-size: 15pt;
+		padding: 10pt;
+		color: #032842;
+		font-weight: bolder;
+	}
+	ion-navbar.toolbar {
+      height: 15pt;
+    }
+    
+}

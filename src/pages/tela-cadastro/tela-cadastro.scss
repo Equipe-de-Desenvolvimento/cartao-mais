@@ -1,0 +1,17 @@
+page-tela-cadastro {
+	.negrito {font-weight: bold;}
+	.pularEtapa {
+		font-style:italic;
+		font-size: 10pt;
+		text-decoration: underline;
+		text-align: right;
+		margin-right: 10pt;
+	}
+	button{
+		font-weight: bolder;
+		font-size: 13pt;
+	}
+	ion-navbar.toolbar {
+      height: 15pt;
+    }
+}
