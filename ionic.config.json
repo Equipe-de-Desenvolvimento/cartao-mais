@@ -1,0 +1,7 @@
+{
+  "name": "Mais por Menos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
