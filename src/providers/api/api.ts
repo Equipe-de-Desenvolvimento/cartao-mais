@@ -5,8 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ApiProvider {
   
-  // public api: string = "http://200.98.64.240/fidelidadee/webservice/ ";
-  public api: string = "http://192.168.25.35/fidelidade/webservice/";
+  public api: string = "http://192.168.25.51/fidelidade/webservice/";
 
   constructor(public http: Http) {
     console.log('Hello ApiProvider Provider');
