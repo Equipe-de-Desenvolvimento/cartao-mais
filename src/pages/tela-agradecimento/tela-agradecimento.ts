@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
-import { LocaisAtendimentoPage } from '../locais-atendimento/locais-atendimento';
+// import { LocaisAtendimentoPage } from '../locais-atendimento/locais-atendimento';
 
 @IonicPage()
 @Component({
@@ -15,7 +15,7 @@ export class TelaAgradecimentoPage {
 
   public verDescontos() {
     
-    this.nav.push(LocaisAtendimentoPage);
+    this.nav.push('LocaisAtendimentoPage');
   }
 
 }

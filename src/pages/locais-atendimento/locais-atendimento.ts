@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiProvider } from "../../providers/api/api";
 import { IonicPage, NavController, NavParams, LoadingController, ViewController, AlertController, ModalController } from 'ionic-angular';
-import { ListaProcedimentosPage } from '../lista-procedimentos/lista-procedimentos';
+// import { ListaProcedimentosPage } from '../lista-procedimentos/lista-procedimentos';
 
 @IonicPage()
 @Component({
@@ -52,7 +52,7 @@ export class LocaisAtendimentoPage {
   }
 
   listarProcedimentos(parceiro){
-    let profileModal = this.modalCtrl.create(ListaProcedimentosPage, { dados: parceiro });
+    let profileModal = this.modalCtrl.create('ListaProcedimentosPage', { dados: parceiro });
     profileModal.present();
   }
 

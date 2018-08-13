@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SolicitacaoExamePage } from '../solicitacao-exame/solicitacao-exame';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
+// import { SolicitacaoExamePage } from '../solicitacao-exame/solicitacao-exame';
 
 @IonicPage()
 @Component({
@@ -21,7 +21,7 @@ export class AgendamentoExamesPage {
 
   abrirTelaSolicitacao(){
     if (this.txtExame != "") {
-    	let profileModal = this.modalCtrl.create(SolicitacaoExamePage, { exame: this.txtExame });
+    	let profileModal = this.modalCtrl.create('SolicitacaoExamePage', { exame: this.txtExame });
       profileModal.present();
     }
   }

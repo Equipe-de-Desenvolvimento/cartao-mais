@@ -12,7 +12,8 @@ export class ApiProvider {
   }
 
   public autenticarUsuario(user, senha){
-  	let metodo =  "autenticarusuario?";
+    let metodo =  "autenticarusuario?";
+    // user é o CPF e a senha é o numero do contrato
   	let parametros = "user=" + user + "&pw=" + senha;
   	
   	let req = this.api + metodo + parametros;

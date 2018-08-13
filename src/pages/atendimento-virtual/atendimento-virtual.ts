@@ -12,7 +12,7 @@ export class AtendimentoVirtualPage {
   }
 
   fecharPagina(){
-	this.view.dismiss();
+    this.view.dismiss();
   }
 
 }

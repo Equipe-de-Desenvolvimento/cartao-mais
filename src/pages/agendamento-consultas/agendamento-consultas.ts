@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
-import { SolicitacaoConsultaPage } from '../solicitacao-consulta/solicitacao-consulta';
+// import { SolicitacaoConsultaPage } from '../solicitacao-consulta/solicitacao-consulta';
 
 @IonicPage()
 @Component({
@@ -20,7 +20,7 @@ export class AgendamentoConsultasPage {
   }
 
   telaSolicitacao(consulta) {
-    let profileModal = this.modalCtrl.create(SolicitacaoConsultaPage, { consulta: consulta });
+    let profileModal = this.modalCtrl.create('SolicitacaoConsultaPage', { consulta: consulta });
     profileModal.present();
   }
 

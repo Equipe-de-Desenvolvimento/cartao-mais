@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, Nav } from 'ionic-angular';
 import { Storage  } from '@ionic/storage';
-import { PaginaOpcoesPage } from '../pagina-opcoes/pagina-opcoes';
-import { TelaPrincipalPage } from '../tela-principal/tela-principal';
+// import { PaginaOpcoesPage } from '../pagina-opcoes/pagina-opcoes';
+// import { TelaPrincipalPage } from '../tela-principal/tela-principal';
 
 @Component({
   selector: 'page-home',
@@ -18,7 +18,7 @@ export class HomePage {
       		storage.get('usuario').then((usuario) => {
       			if (usuario != null && usuario !== undefined) {
 			        /* Redirecionando para a Tele Principal */
-		          	this.nav.setRoot(TelaPrincipalPage);
+		          	this.nav.setRoot('TelaPrincipalPage');
 		        }
 		    });
 
@@ -28,7 +28,7 @@ export class HomePage {
   }
 
   public carregarPaginaOpcoes(){
-  	this.nav.setRoot(PaginaOpcoesPage);
+  	this.nav.setRoot('PaginaOpcoesPage');
   }
 
 }

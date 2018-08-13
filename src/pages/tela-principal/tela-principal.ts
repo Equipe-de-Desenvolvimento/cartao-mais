@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Storage  } from '@ionic/storage';
 
 import { IonicPage, NavController, NavParams, Nav, AlertController } from 'ionic-angular';
-import { PaginaOpcoesPage } from '../pagina-opcoes/pagina-opcoes';
-import { AgendamentoExamesPage } from '../agendamento-exames/agendamento-exames';
-import { AgendamentoConsultasPage } from '../agendamento-consultas/agendamento-consultas';
-import { LocaisAtendimentoPage } from '../locais-atendimento/locais-atendimento';
-import { AtendimentoVirtualPage } from '../atendimento-virtual/atendimento-virtual';
+// import { PaginaOpcoesPage } from '../pagina-opcoes/pagina-opcoes';
+// import { AgendamentoExamesPage } from '../agendamento-exames/agendamento-exames';
+// import { AgendamentoConsultasPage } from '../agendamento-consultas/agendamento-consultas';
+// import { LocaisAtendimentoPage } from '../locais-atendimento/locais-atendimento';
+// import { AtendimentoVirtualPage } from '../atendimento-virtual/atendimento-virtual';
 
 @IonicPage()
 @Component({
@@ -43,7 +43,7 @@ export class TelaPrincipalPage {
         handler: data => {
           this.storage.set('usuario', null);
           this.storage.set('usuario_id', null);
-          this.nav.setRoot(PaginaOpcoesPage);
+          this.nav.setRoot('PaginaOpcoesPage');
         }
       }]
     });
@@ -51,18 +51,18 @@ export class TelaPrincipalPage {
   }
 
   public agendamentoExames() {
-    this.nav.push(AgendamentoExamesPage);
+    this.nav.push('AgendamentoExamesPage');
   }
 
   public agendamentoConsultas() {
-    this.nav.push(AgendamentoConsultasPage);
+    this.nav.push('AgendamentoConsultasPage');
   }
 
   public locaisAtendimento() {
-    this.nav.push(LocaisAtendimentoPage);
+    this.nav.push('LocaisAtendimentoPage');
   }
 
   public atendimentoVirtual() {
-    this.nav.push(AtendimentoVirtualPage);
+    this.nav.push('AtendimentoVirtualPage');
   }
 }

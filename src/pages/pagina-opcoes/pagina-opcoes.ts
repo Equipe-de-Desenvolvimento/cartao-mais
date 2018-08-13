@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
-import { TelaLoginPage } from '../tela-login/tela-login'
-import { TelaCadastroPage } from '../tela-cadastro/tela-cadastro';
+// import { TelaLoginPage } from '../tela-login/tela-login'
+// import { TelaCadastroPage } from '../tela-cadastro/tela-cadastro';
 
 @IonicPage()
 @Component({
@@ -14,11 +14,11 @@ export class PaginaOpcoesPage {
   }
 
   public telaLogin() {
-  	this.nav.push(TelaLoginPage);
+  	this.nav.push('TelaLoginPage');
   }
 
 
   public naoSouCliente() {
-  	this.nav.push(TelaCadastroPage);
+  	this.nav.push('TelaCadastroPage');
   }
 }

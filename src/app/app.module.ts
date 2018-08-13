@@ -9,18 +9,18 @@ import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { PaginaOpcoesPage } from '../pages/pagina-opcoes/pagina-opcoes';
-import { TelaLoginPage } from '../pages/tela-login/tela-login';
-import { TelaCadastroPage } from '../pages/tela-cadastro/tela-cadastro';
-import { TelaAgradecimentoPage } from '../pages/tela-agradecimento/tela-agradecimento';
-import { TelaPrincipalPage } from '../pages/tela-principal/tela-principal';
-import { AgendamentoExamesPage } from '../pages/agendamento-exames/agendamento-exames';
-import { AgendamentoConsultasPage } from '../pages/agendamento-consultas/agendamento-consultas';
-import { SolicitacaoConsultaPage } from '../pages/solicitacao-consulta/solicitacao-consulta';
-import { LocaisAtendimentoPage } from '../pages/locais-atendimento/locais-atendimento';
-import { AtendimentoVirtualPage } from '../pages/atendimento-virtual/atendimento-virtual';
-import { SolicitacaoExamePage } from '../pages/solicitacao-exame/solicitacao-exame';
-import { ListaProcedimentosPage } from '../pages/lista-procedimentos/lista-procedimentos';
+// import { PaginaOpcoesPage } from '../pages/pagina-opcoes/pagina-opcoes';
+// import { TelaLoginPage } from '../pages/tela-login/tela-login';
+// import { TelaCadastroPage } from '../pages/tela-cadastro/tela-cadastro';
+// import { TelaAgradecimentoPage } from '../pages/tela-agradecimento/tela-agradecimento';
+// import { TelaPrincipalPage } from '../pages/tela-principal/tela-principal';
+// import { AgendamentoExamesPage } from '../pages/agendamento-exames/agendamento-exames';
+// import { AgendamentoConsultasPage } from '../pages/agendamento-consultas/agendamento-consultas';
+// import { SolicitacaoConsultaPage } from '../pages/solicitacao-consulta/solicitacao-consulta';
+// import { LocaisAtendimentoPage } from '../pages/locais-atendimento/locais-atendimento';
+// import { AtendimentoVirtualPage } from '../pages/atendimento-virtual/atendimento-virtual';
+// import { SolicitacaoExamePage } from '../pages/solicitacao-exame/solicitacao-exame';
+// import { ListaProcedimentosPage } from '../pages/lista-procedimentos/lista-procedimentos';
 
 import { ApiProvider } from '../providers/api/api';
 
@@ -28,18 +28,18 @@ import { ApiProvider } from '../providers/api/api';
   declarations: [
     MyApp,
     HomePage,
-    PaginaOpcoesPage,
-    TelaLoginPage,
-    TelaCadastroPage,
-    TelaAgradecimentoPage,
-    TelaPrincipalPage,
-    AgendamentoExamesPage,
-    AgendamentoConsultasPage,
-    SolicitacaoConsultaPage,
-    LocaisAtendimentoPage,
-    AtendimentoVirtualPage,
-    SolicitacaoExamePage,
-    ListaProcedimentosPage
+    // PaginaOpcoesPage,
+    // TelaLoginPage,
+    // TelaCadastroPage,
+    // TelaAgradecimentoPage,
+    // TelaPrincipalPage,
+    // AgendamentoExamesPage,
+    // AgendamentoConsultasPage,
+    // SolicitacaoConsultaPage,
+    // LocaisAtendimentoPage,
+    // AtendimentoVirtualPage,
+    // SolicitacaoExamePage,
+    // ListaProcedimentosPage
   ],
   imports: [
     BrowserModule,
@@ -52,18 +52,18 @@ import { ApiProvider } from '../providers/api/api';
   entryComponents: [
     MyApp,
     HomePage,
-    PaginaOpcoesPage,
-    TelaLoginPage,
-    TelaCadastroPage,
-    TelaAgradecimentoPage,
-    TelaPrincipalPage,
-    AgendamentoExamesPage,
-    AgendamentoConsultasPage,
-    SolicitacaoConsultaPage,
-    LocaisAtendimentoPage,
-    AtendimentoVirtualPage,
-    SolicitacaoExamePage,
-    ListaProcedimentosPage
+    // PaginaOpcoesPage,
+    // TelaLoginPage,
+    // TelaCadastroPage,
+    // TelaAgradecimentoPage,
+    // TelaPrincipalPage,
+    // AgendamentoExamesPage,
+    // AgendamentoConsultasPage,
+    // SolicitacaoConsultaPage,
+    // LocaisAtendimentoPage,
+    // AtendimentoVirtualPage,
+    // SolicitacaoExamePage,
+    // ListaProcedimentosPage
   ],
   providers: [
     StatusBar,

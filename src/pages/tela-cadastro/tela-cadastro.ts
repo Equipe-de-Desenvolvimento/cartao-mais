@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav, ViewController } from 'ionic-angular';
-import { TelaAgradecimentoPage } from '../tela-agradecimento/tela-agradecimento';
+// import { TelaAgradecimentoPage } from '../tela-agradecimento/tela-agradecimento';
 
 
 @IonicPage()
@@ -23,7 +23,7 @@ export class TelaCadastroPage {
   }
 
   public mostrarTelaAgradecimento(){
-  	this.nav.setRoot(TelaAgradecimentoPage);
+  	this.nav.setRoot('TelaAgradecimentoPage');
   }
 
 }
