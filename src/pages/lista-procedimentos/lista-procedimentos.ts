@@ -22,7 +22,7 @@ export class ListaProcedimentosPage {
   filtrarProcedimentos(ev: any){
   	let val = ev.target.value;
 
-	var result = new Array();
+    var result = new Array();
 
   	if (val.length != '0') {
   		for (var i = 0; i < this.dados.procedimentos.length; i++) {

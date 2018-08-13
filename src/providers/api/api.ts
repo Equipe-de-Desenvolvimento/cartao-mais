@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ApiProvider {
   
-  public api: string = "http://192.168.25.51/fidelidade/webservice/";
+  public api: string = "http://stgclinica.ddns.net/cartaomais/webservice/";
 
   constructor(public http: Http) {
     console.log('Hello ApiProvider Provider');
@@ -68,6 +68,8 @@ export class ApiProvider {
     let metodo =  "listarprocedimentosparceiros?";
     
     let req = this.api + metodo;
+    
+    console.log(req);
 
     return this.http.get(req).map((res) => { 
       return res.json(); 

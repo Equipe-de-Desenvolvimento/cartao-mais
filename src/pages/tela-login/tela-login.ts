@@ -36,23 +36,23 @@ export class TelaLoginPage {
         /* Tirando o efeito de loading */
         carregando.dismiss();
 
-        if(data.codigo == "01"){ 
-          // salvando o nome do usuario logado
-          this.storage.set('usuario', data.usuario);
-          this.storage.set('usuario_id', data.paciente_id);
+        // if(data.codigo == "01"){ 
+        //   // salvando o nome do usuario logado
+        //   this.storage.set('usuario', data.usuario);
+        //   this.storage.set('usuario_id', data.paciente_id);
 
           /* Redirecionando para a Tele Principal */
           this.nav.setRoot(TelaPrincipalPage);
-        }
-        else{
-          // Mostrando o alerta em caso de erro
-          let alert = this.alertCtrl.create({
-            title: 'Erro!',
-            subTitle: data.mensagem,
-            buttons: ['OK']
-          });
-          alert.present();
-        }
+        // }
+        // else{
+        //   // Mostrando o alerta em caso de erro
+        //   let alert = this.alertCtrl.create({
+        //     title: 'Erro!',
+        //     subTitle: data.mensagem,
+        //     buttons: ['OK']
+        //   });
+        //   alert.present();
+        // }
       },
       (erro) => {
         carregando.dismiss();
